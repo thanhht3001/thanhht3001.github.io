@@ -1,0 +1,97 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "about": "Về tôi",
+    "projects": "Dự án",
+    "blog": "Blog",
+    "timeline": "Hành trình",
+    "skills": "Kỹ năng",
+    "contact": "Liên hệ",
+    "cv": "CV"
+  },
+  "hero": {
+    "greeting": "Xin chào, mình là",
+    "name": "Hồ Tấn Thành",
+    "role": ".NET Fullstack Developer",
+    "description": "Đam mê viết code, xây dựng phần mềm y tế, và thích đi phượt khám phá.",
+    "cta_projects": "Xem dự án",
+    "cta_contact": "Liên hệ"
+  },
+  "home": {
+    "about_title": "Một chút về mình",
+    "about_text": "Mình là một .NET Developer đang làm việc trong lĩnh vực phần mềm y tế tại TP.HCM. Ngoài công việc, mình thích đi phượt và khám phá những con đường mới.",
+    "recent_posts": "Bài viết gần đây",
+    "view_all": "Xem tất cả",
+    "featured_projects": "Dự án nổi bật"
+  },
+  "about": {
+    "title": "Về tôi",
+    "subtitle": "Developer, dreamer, và người thích đi phượt",
+    "intro": "Xin chào! Mình là Thành — một .NET Fullstack Developer tại TP. Hồ Chí Minh.",
+    "story_title": "Câu chuyện của mình",
+    "story_p1": "Mình tốt nghiệp ngành Kỹ thuật Phần mềm tại Đại học FPT vào năm 2023. Sau đó mình bắt đầu hành trình developer tại FPT Software với vai trò intern, rồi làm việc tại QAS nơi mình phát triển phần mềm quản lý y tế cho chuỗi tiêm chủng với hơn 200 chi nhánh.",
+    "story_p2": "Hiện tại mình đang làm việc tại Apis Medical, tiếp tục phát triển các ứng dụng y tế sử dụng Blazor Web và .NET. Mỗi ngày đi làm là một ngày được học thêm điều mới.",
+    "philosophy_title": "Triết lý làm việc",
+    "philosophy": "Code không chỉ là viết logic — đó là giải quyết vấn đề thực sự cho con người. Mình luôn hướng tới việc tạo ra phần mềm chất lượng, dễ bảo trì và có giá trị thực tế.",
+    "hobbies_title": "Ngoài công việc",
+    "hobbies": "Khi không ngồi trước màn hình, bạn sẽ thấy mình đang đi phượt đâu đó, khám phá quán cà phê mới, hoặc tìm hiểu công nghệ mới. Mình tin rằng những trải nghiệm ngoài đời thực giúp mình trở thành developer tốt hơn."
+  },
+  "projects": {
+    "title": "Dự án",
+    "subtitle": "Những dự án mình đã và đang làm",
+    "view_code": "Xem code",
+    "live_demo": "Demo"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Chia sẻ kiến thức và trải nghiệm của mình",
+    "read_more": "Đọc tiếp",
+    "min_read": "phút đọc",
+    "no_posts": "Chưa có bài viết nào. Hãy quay lại sau nhé!",
+    "back": "Quay lại Blog"
+  },
+  "timeline": {
+    "title": "Hành trình phượt",
+    "subtitle": "Bản đồ hành trình sự nghiệp — mỗi cột mốc là một chặng đường mới"
+  },
+  "skills": {
+    "title": "Kỹ năng",
+    "subtitle": "Công nghệ và công cụ mình sử dụng",
+    "languages": "Ngôn ngữ lập trình",
+    "frameworks": "Frameworks & Libraries",
+    "tools": "Công cụ & Nền tảng",
+    "databases": "Cơ sở dữ liệu",
+    "soft_skills": "Kỹ năng mềm"
+  },
+  "contact": {
+    "title": "Liên hệ",
+    "subtitle": "Hãy kết nối với mình nhé!",
+    "intro": "Bạn có dự án thú vị, cơ hội hợp tác, hoặc đơn giản chỉ muốn nói chuyện? Mình luôn sẵn lòng lắng nghe.",
+    "name": "Họ và tên",
+    "email": "Email",
+    "message": "Tin nhắn",
+    "send": "Gửi tin nhắn",
+    "sending": "Đang gửi...",
+    "success": "Cảm ơn bạn! Mình sẽ phản hồi sớm nhất có thể.",
+    "error": "Có lỗi xảy ra. Vui lòng thử lại.",
+    "or_reach": "Hoặc liên hệ qua"
+  },
+  "cv": {
+    "title": "CV / Resume",
+    "subtitle": "Xem và tải về CV của mình",
+    "download": "Tải PDF",
+    "view_vi": "Tiếng Việt",
+    "view_en": "English"
+  },
+  "footer": {
+    "made_with": "Được tạo với",
+    "and": "và",
+    "coffee": "cà phê",
+    "by": "bởi Hồ Tấn Thành"
+  },
+  "not_found": {
+    "title": "404",
+    "message": "bash: page: command not found",
+    "back": "Về trang chủ"
+  }
+}

@@ -1,0 +1,71 @@
+.glow-card {
+  position: relative;
+  border-radius: 12px;
+  will-change: transform;
+  transform-style: preserve-3d;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.glow-card.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.glow-card-border {
+  position: absolute;
+  inset: -1px;
+  border-radius: 13px;
+  background: linear-gradient(
+    135deg,
+    transparent 0%,
+    transparent 40%,
+    rgba(88, 166, 255, 0.0) 40%,
+    rgba(88, 166, 255, 0.0) 100%
+  );
+  z-index: 0;
+  transition: background 0.3s ease;
+  pointer-events: none;
+}
+
+.glow-card:hover .glow-card-border {
+  background: linear-gradient(
+    135deg,
+    rgba(88, 166, 255, 0.3) 0%,
+    rgba(74, 158, 218, 0.15) 50%,
+    transparent 100%
+  );
+}
+
+.tilt-glare {
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  z-index: 1;
+  pointer-events: none;
+  transition: background 0.2s ease;
+}
+
+.glow-card-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+
+/* Glow shadow on hover */
+.glow-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  box-shadow: 0 0 30px rgba(88, 166, 255, 0.15), 0 0 60px rgba(88, 166, 255, 0.05);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.glow-card:hover::after {
+  opacity: 1;
+}

@@ -1,0 +1,97 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "blog": "Blog",
+    "timeline": "Timeline",
+    "skills": "Skills",
+    "contact": "Contact",
+    "cv": "CV"
+  },
+  "hero": {
+    "greeting": "Hi there, I'm",
+    "name": "Ho Tan Thanh",
+    "role": ".NET Fullstack Developer",
+    "description": "Passionate about coding, building healthcare software, and road trip adventures.",
+    "cta_projects": "View Projects",
+    "cta_contact": "Get in Touch"
+  },
+  "home": {
+    "about_title": "A bit about me",
+    "about_text": "I'm a .NET Developer working in healthcare software in Ho Chi Minh City. Outside of work, I enjoy road trips and exploring new places.",
+    "recent_posts": "Recent Posts",
+    "view_all": "View all",
+    "featured_projects": "Featured Projects"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Developer, dreamer, and road trip enthusiast",
+    "intro": "Hi! I'm Thanh — a .NET Fullstack Developer based in Ho Chi Minh City.",
+    "story_title": "My Story",
+    "story_p1": "I graduated with a degree in Software Engineering from FPT University in 2023. I started my developer journey at FPT Software as an intern, then worked at QAS where I built healthcare management software for a vaccination chain with over 200 branches.",
+    "story_p2": "Currently, I'm working at Apis Medical, continuing to develop healthcare applications using Blazor Web and .NET. Every day at work is a day to learn something new.",
+    "philosophy_title": "Work Philosophy",
+    "philosophy": "Code isn't just about writing logic — it's about solving real problems for real people. I always aim to create quality software that is maintainable and delivers practical value.",
+    "hobbies_title": "Beyond Code",
+    "hobbies": "When I'm not in front of a screen, you'll find me on a road trip, exploring a new coffee shop, or diving into new technologies. I believe real-world experiences make me a better developer."
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Things I've built and worked on",
+    "view_code": "View Code",
+    "live_demo": "Live Demo"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Sharing my knowledge and experiences",
+    "read_more": "Read more",
+    "min_read": "min read",
+    "no_posts": "No posts yet. Check back soon!",
+    "back": "Back to Blog"
+  },
+  "timeline": {
+    "title": "Road Trip",
+    "subtitle": "My career journey map — every milestone is a new adventure"
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Technologies and tools I work with",
+    "languages": "Programming Languages",
+    "frameworks": "Frameworks & Libraries",
+    "tools": "Tools & Platforms",
+    "databases": "Databases",
+    "soft_skills": "Soft Skills"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's connect!",
+    "intro": "Have an exciting project, collaboration opportunity, or just want to chat? I'm always happy to hear from you.",
+    "name": "Full Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Thank you! I'll get back to you as soon as possible.",
+    "error": "Something went wrong. Please try again.",
+    "or_reach": "Or reach me at"
+  },
+  "cv": {
+    "title": "CV / Resume",
+    "subtitle": "View and download my CV",
+    "download": "Download PDF",
+    "view_vi": "Vietnamese",
+    "view_en": "English"
+  },
+  "footer": {
+    "made_with": "Made with",
+    "and": "and",
+    "coffee": "coffee",
+    "by": "by Ho Tan Thanh"
+  },
+  "not_found": {
+    "title": "404",
+    "message": "bash: page: command not found",
+    "back": "Go Home"
+  }
+}

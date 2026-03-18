@@ -1,0 +1,52 @@
+[
+  {
+    "slug": "xin-chao-the-gioi",
+    "lang": "vi",
+    "title": "Xin chào thế giới! 🌍",
+    "date": "2026-03-18",
+    "excerpt": "Bài viết đầu tiên trên blog cá nhân — tại sao mình tạo blog này và những gì bạn sẽ tìm thấy ở đây.",
+    "tags": [
+      "intro",
+      "personal"
+    ],
+    "readTime": 1
+  },
+  {
+    "slug": "hello-world",
+    "lang": "en",
+    "title": "Hello World! 🌍",
+    "date": "2026-03-18",
+    "excerpt": "My very first blog post — why I created this blog and what you'll find here.",
+    "tags": [
+      "intro",
+      "personal"
+    ],
+    "readTime": 1
+  },
+  {
+    "slug": "blazor-kinh-nghiem",
+    "lang": "vi",
+    "title": "Kinh nghiệm làm việc với Blazor trong dự án thực tế",
+    "date": "2026-03-15",
+    "excerpt": "Những bài học mình rút ra sau hơn 1 năm làm việc với Blazor trong phần mềm y tế.",
+    "tags": [
+      "blazor",
+      ".net",
+      "healthcare"
+    ],
+    "readTime": 1
+  },
+  {
+    "slug": "blazor-experience",
+    "lang": "en",
+    "title": "Working with Blazor in Real-World Projects",
+    "date": "2026-03-15",
+    "excerpt": "Lessons learned from over 1 year of using Blazor in healthcare software development.",
+    "tags": [
+      "blazor",
+      ".net",
+      "healthcare"
+    ],
+    "readTime": 1
+  }
+]

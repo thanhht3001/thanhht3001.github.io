@@ -1,0 +1,65 @@
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - var(--nav-height) - 200px);
+}
+
+.not-found-terminal {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 500px;
+  width: 100%;
+}
+
+.not-found-body {
+  padding: 2rem;
+  text-align: center;
+}
+
+.not-found-code {
+  font-size: 5rem;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  color: var(--terminal-red);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.not-found-message {
+  font-family: var(--font-mono);
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  font-size: 0.9375rem;
+}
+
+.not-found-btn {
+  margin: 0 auto;
+}
+
+/* Reuse terminal-header dots from TerminalText.css */
+.not-found-terminal .terminal-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.not-found-terminal .terminal-dot.red { background: #f85149; }
+.not-found-terminal .terminal-dot.yellow { background: #d29922; }
+.not-found-terminal .terminal-dot.green { background: #3fb950; }
+
+.not-found-terminal .terminal-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: var(--bg-tertiary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.not-found-terminal .terminal-prompt {
+  color: var(--terminal-green);
+  font-weight: 700;
+}

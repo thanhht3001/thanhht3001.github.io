@@ -1,0 +1,57 @@
+.cv-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cv-lang-toggle {
+  display: flex;
+  gap: 0;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.cv-lang-btn {
+  padding: 0.5rem 1rem;
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-family: var(--font-body);
+  transition: all 0.2s;
+}
+
+.cv-lang-btn:not(:last-child) {
+  border-right: 1px solid var(--border-color);
+}
+
+.cv-lang-btn.active {
+  background: var(--accent);
+  color: var(--bg-primary);
+  font-weight: 600;
+}
+
+.cv-iframe-wrap {
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.cv-iframe {
+  width: 100%;
+  height: 1150px;
+  border: none;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .cv-iframe {
+    height: 800px;
+  }
+}

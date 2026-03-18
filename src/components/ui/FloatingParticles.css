@@ -1,0 +1,60 @@
+.floating-particles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.particle {
+  position: absolute;
+  background: var(--accent);
+  border-radius: 50%;
+  animation: particleFloat linear infinite;
+}
+
+@keyframes particleFloat {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0;
+  }
+  10% {
+    opacity: var(--particle-opacity, 0.3);
+  }
+  50% {
+    transform: translate(calc(var(--drift-x, 40px)), calc(var(--drift-y, -120px))) scale(1.2);
+  }
+  90% {
+    opacity: var(--particle-opacity, 0.3);
+  }
+  100% {
+    transform: translate(calc(var(--drift-x, 40px) * 2), calc(var(--drift-y, -120px) * 2)) scale(0.5);
+    opacity: 0;
+  }
+}
+
+/* Generate varied drift paths for different particles */
+.particle:nth-child(odd) {
+  --drift-x: 60px;
+  --drift-y: -100px;
+}
+
+.particle:nth-child(even) {
+  --drift-x: -40px;
+  --drift-y: -140px;
+}
+
+.particle:nth-child(3n) {
+  --drift-x: 80px;
+  --drift-y: -80px;
+}
+
+.particle:nth-child(4n) {
+  --drift-x: -70px;
+  --drift-y: -160px;
+}
+
+.particle:nth-child(5n) {
+  --drift-x: 30px;
+  --drift-y: -200px;
+}
