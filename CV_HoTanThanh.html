@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CV - Ho Tan Thanh</title>
+  <title>CV - Hồ Tấn Thành</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -32,7 +32,10 @@
       flex-shrink: 0;
     }
 
-    .avatar-wrap { text-align: center; margin-bottom: 12px; }
+    .avatar-wrap {
+      text-align: center;
+      margin-bottom: 12px;
+    }
 
     .avatar-ring {
       display: inline-block;
@@ -70,7 +73,9 @@
       line-height: 1.4;
     }
 
-    .sidebar-section { margin-bottom: 14px; }
+    .sidebar-section {
+      margin-bottom: 14px;
+    }
 
     .sidebar-section-title {
       font-size: 11px;
@@ -107,6 +112,30 @@
       word-break: break-all;
     }
 
+    /* Skills */
+    .skill-item {
+      margin-bottom: 8px;
+    }
+
+    .skill-label {
+      font-size: 11px;
+      color: #cce0f5;
+      margin-bottom: 3px;
+    }
+
+    .skill-bar-bg {
+      background: #2d4a6a;
+      border-radius: 4px;
+      height: 5px;
+    }
+
+    .skill-bar {
+      height: 5px;
+      border-radius: 4px;
+      background: linear-gradient(90deg, #4a9eda, #7fb8e0);
+    }
+
+    /* Cert */
     .cert-item {
       font-size: 11px;
       color: #cce0f5;
@@ -114,9 +143,17 @@
       line-height: 1.5;
     }
 
-    .cert-name { font-weight: 700; color: #fff; }
+    .cert-name {
+      font-weight: 700;
+      color: #fff;
+    }
 
-    .tags { display: flex; flex-wrap: wrap; gap: 5px; }
+    /* Tool tags */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
 
     .tag {
       background: #1a2e4a;
@@ -137,6 +174,7 @@
       border: 1px solid #2d4a6a;
     }
 
+    /* Lang */
     .lang-item {
       font-size: 11px;
       color: #cce0f5;
@@ -144,7 +182,10 @@
     }
 
     /* ===== MAIN CONTENT ===== */
-    .main { flex: 1; padding: 20px 20px; }
+    .main {
+      flex: 1;
+      padding: 20px 20px;
+    }
 
     .main-header {
       margin-bottom: 18px;
@@ -166,7 +207,9 @@
       margin-top: 2px;
     }
 
-    .section { margin-bottom: 13px; }
+    .section {
+      margin-bottom: 13px;
+    }
 
     .section-title {
       font-size: 12px;
@@ -179,7 +222,16 @@
       margin-bottom: 10px;
     }
 
-    .obj-block { margin-bottom: 8px; }
+    /* Objective */
+    .objective-text {
+      font-size: 12px;
+      line-height: 1.7;
+      color: #444;
+    }
+
+    .obj-block {
+      margin-bottom: 8px;
+    }
 
     .obj-label {
       font-size: 11px;
@@ -194,7 +246,8 @@
     .obj-label::before {
       content: '';
       display: inline-block;
-      width: 6px; height: 6px;
+      width: 6px;
+      height: 6px;
       border-radius: 50%;
       background: #4a9eda;
       flex-shrink: 0;
@@ -206,6 +259,7 @@
       color: #444;
     }
 
+    /* Experience */
     .exp-item {
       margin-bottom: 10px;
       position: relative;
@@ -215,8 +269,10 @@
     .exp-item::before {
       content: '';
       position: absolute;
-      left: 0; top: 6px;
-      width: 6px; height: 6px;
+      left: 0;
+      top: 6px;
+      width: 6px;
+      height: 6px;
       background: #4a9eda;
       border-radius: 50%;
     }
@@ -228,7 +284,11 @@
       margin-bottom: 2px;
     }
 
-    .exp-title { font-size: 13px; font-weight: 700; color: #1a2e4a; }
+    .exp-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #1a2e4a;
+    }
 
     .exp-date {
       font-size: 11px;
@@ -245,7 +305,10 @@
       font-style: italic;
     }
 
-    .exp-desc { list-style: none; padding: 0; }
+    .exp-desc {
+      list-style: none;
+      padding: 0;
+    }
 
     .exp-desc li {
       font-size: 11.5px;
@@ -280,21 +343,42 @@
       font-weight: 600;
     }
 
-    .edu-item { padding-left: 12px; position: relative; }
+    /* Education */
+    .edu-item {
+      padding-left: 12px;
+      position: relative;
+    }
 
     .edu-item::before {
       content: '';
       position: absolute;
-      left: 0; top: 6px;
-      width: 6px; height: 6px;
+      left: 0;
+      top: 6px;
+      width: 6px;
+      height: 6px;
       background: #4a9eda;
       border-radius: 50%;
     }
 
-    .edu-school { font-size: 13px; font-weight: 700; color: #1a2e4a; }
-    .edu-major { font-size: 11.5px; color: #555; margin-top: 1px; }
-    .edu-detail { font-size: 11px; color: #888; margin-top: 2px; }
+    .edu-school {
+      font-size: 13px;
+      font-weight: 700;
+      color: #1a2e4a;
+    }
 
+    .edu-major {
+      font-size: 11.5px;
+      color: #555;
+      margin-top: 1px;
+    }
+
+    .edu-detail {
+      font-size: 11px;
+      color: #888;
+      margin-top: 2px;
+    }
+
+    /* Project */
     .proj-item {
       margin-bottom: 10px;
       padding-left: 12px;
@@ -304,18 +388,38 @@
     .proj-item::before {
       content: '';
       position: absolute;
-      left: 0; top: 6px;
-      width: 6px; height: 6px;
+      left: 0;
+      top: 6px;
+      width: 6px;
+      height: 6px;
       background: #4a9eda;
       border-radius: 50%;
     }
 
-    .proj-title { font-size: 12.5px; font-weight: 700; color: #1a2e4a; }
-    .proj-desc { font-size: 11.5px; color: #555; margin-top: 2px; line-height: 1.5; }
-    .proj-link { font-size: 11px; color: #4a9eda; text-decoration: none; }
+    .proj-title {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #1a2e4a;
+    }
+
+    .proj-desc {
+      font-size: 11.5px;
+      color: #555;
+      margin-top: 2px;
+      line-height: 1.5;
+    }
+
+    .proj-link {
+      font-size: 11px;
+      color: #4a9eda;
+      text-decoration: none;
+    }
 
     @media print {
-      @page { size: A4; margin: 0; }
+      @page {
+        size: A4;
+        margin: 0;
+      }
       body { background: #fff; margin: 0; padding: 0; }
       .page {
         margin: 0;
@@ -349,46 +453,64 @@
 
     <div class="avatar-wrap">
       <div class="avatar-ring">
-        <img class="avatar" src="../images/avatar.jpg" alt="Ho Tan Thanh" />
+        <img class="avatar" src="Thanh4x6 Anh .jpg" alt="Hồ Tấn Thành" />
       </div>
     </div>
 
-    <div class="sidebar-name">Ho Tan Thanh</div>
+    <div class="sidebar-name">Hồ Tấn Thành</div>
     <div class="sidebar-title">.NET Fullstack Developer</div>
 
-    <!-- CONTACT -->
+    <!-- LIÊN HỆ -->
     <div class="sidebar-section">
-      <div class="sidebar-section-title">Contact</div>
+      <div class="sidebar-section-title">Liên hệ</div>
+      <!-- Phone -->
       <div class="contact-item">
-        <svg class="contact-icon" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
-        <span>(+84) 367 921 241</span>
+        <svg class="contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+        </svg>
+        <span>0367 921 241</span>
       </div>
+      <!-- Email -->
       <div class="contact-item">
-        <svg class="contact-icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        <svg class="contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
         <span>hotanthanhptg1@gmail.com</span>
       </div>
+      <!-- Location -->
       <div class="contact-item">
-        <svg class="contact-icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-        <span>Thu Duc, Ho Chi Minh City</span>
+        <svg class="contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+        </svg>
+        <span>Thủ Đức, TP. Hồ Chí Minh</span>
       </div>
+      <!-- LinkedIn -->
       <div class="contact-item">
-        <svg class="contact-icon" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        <svg class="contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+        </svg>
         <a href="https://linkedin.com/in/thanhht3001">linkedin.com/in/thanhht3001</a>
       </div>
+      <!-- GitHub -->
       <div class="contact-item">
-        <svg class="contact-icon" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        <svg class="contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
         <a href="https://github.com/thanhht3001">github.com/thanhht3001</a>
       </div>
       <!-- Website -->
       <div class="contact-item">
-        <svg class="contact-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+        <svg class="contact-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+        </svg>
         <a href="http://thanhht.org">thanhht.org</a>
       </div>
     </div>
 
-    <!-- SKILLS -->
+    <!-- KỸ NĂNG -->
     <div class="sidebar-section">
-      <div class="sidebar-section-title">Skills</div>
+      <div class="sidebar-section-title">Kỹ năng</div>
+
       <div class="tags">
         <span class="tag">C# / .NET</span>
         <span class="tag">SQL Server</span>
@@ -401,9 +523,9 @@
       </div>
     </div>
 
-    <!-- TOOLS -->
+    <!-- CÔNG CỤ -->
     <div class="sidebar-section">
-      <div class="sidebar-section-title">Tools</div>
+      <div class="sidebar-section-title">Công cụ</div>
       <div class="tags">
         <span class="tool-tag">Git</span>
         <span class="tool-tag">Azure</span>
@@ -414,21 +536,21 @@
       </div>
     </div>
 
-    <!-- CERTIFICATE -->
+    <!-- CHỨNG CHỈ -->
     <div class="sidebar-section">
-      <div class="sidebar-section-title">Certificate</div>
+      <div class="sidebar-section-title">Chứng chỉ</div>
       <div class="cert-item">
         <div class="cert-name">Google Project Management</div>
-        <div>August 2023</div>
+        <div>Tháng 8 / 2023</div>
         <div>Agile · Scrum · Project Analysis</div>
       </div>
     </div>
 
-    <!-- LANGUAGES -->
+    <!-- NGÔN NGỮ -->
     <div class="sidebar-section">
-      <div class="sidebar-section-title">Languages</div>
-      <div class="lang-item">🇻🇳 Vietnamese — Native</div>
-      <div class="lang-item">🇬🇧 English — Communicative</div>
+      <div class="sidebar-section-title">Ngôn ngữ</div>
+      <div class="lang-item">🇻🇳 Tiếng Việt — Bản ngữ</div>
+      <div class="lang-item">🇬🇧 Tiếng Anh — Giao tiếp</div>
     </div>
 
   </div>
@@ -437,45 +559,45 @@
   <div class="main">
 
     <div class="main-header">
-      <div class="main-name">HO TAN THANH</div>
+      <div class="main-name">HỒ TẤN THÀNH</div>
       <div class="main-title">.NET Fullstack Developer · Healthcare Software Specialist</div>
     </div>
 
-    <!-- OBJECTIVE -->
+    <!-- MỤC TIÊU -->
     <div class="section">
-      <div class="section-title">Career Objective</div>
+      <div class="section-title">Mục tiêu nghề nghiệp</div>
       <div class="obj-block">
-        <div class="obj-label">Short-term Goal</div>
+        <div class="obj-label">Mục tiêu ngắn hạn</div>
         <div class="obj-content">
-          Focus on delivering quality work and building software products that bring real value.
-          Continuously improve technical skills — especially in .NET, Blazor, and SQL Server —
-          to grow as a developer and contribute more effectively to the team.
+          Tập trung hoàn thành tốt công việc, tạo ra các sản phẩm phần mềm chất lượng
+          và có giá trị thực tế. Không ngừng trau dồi kỹ năng kỹ thuật — đặc biệt là
+          .NET, Blazor, SQL Server — để hoàn thiện bản thân và đóng góp hiệu quả hơn cho team.
         </div>
       </div>
       <div class="obj-block">
-        <div class="obj-label">Long-term Goal</div>
+        <div class="obj-label">Mục tiêu dài hạn</div>
         <div class="obj-content">
-          Grow into higher-level roles such as Senior Developer and Tech Lead, with the goal of
-          moving into a management position to lead teams, guide technical direction, and
-          contribute to the overall product strategy of the organization.
+          Phát triển lên các vị trí cao hơn như Senior Developer, Tech Lead, tiến tới
+          vai trò quản lý để có thể dẫn dắt đội nhóm, định hướng kỹ thuật và đóng góp
+          vào chiến lược phát triển sản phẩm của tổ chức.
         </div>
       </div>
     </div>
 
-    <!-- EXPERIENCE -->
+    <!-- KINH NGHIỆM -->
     <div class="section">
-      <div class="section-title">Work Experience</div>
+      <div class="section-title">Kinh nghiệm làm việc</div>
 
       <div class="exp-item">
         <div class="exp-header">
           <div class="exp-title">Junior .NET Developer</div>
-          <div class="exp-date">Dec 2025 — Present</div>
+          <div class="exp-date">12/2025 — Nay</div>
         </div>
-        <div class="exp-company">Apis Medical Joint Stock Company · Ho Chi Minh City</div>
+        <div class="exp-company">Công ty Cổ phần Y tế Apis · TP. Hồ Chí Minh</div>
         <ul class="exp-desc">
-          <li>Developed healthcare web applications using Blazor Web and .NET 10</li>
-          <li>Applied the latest Microsoft technologies to build medical management software</li>
-          <li>Participated in the full software development lifecycle in a healthcare environment</li>
+          <li>Phát triển ứng dụng web y tế sử dụng Blazor Web và .NET 10</li>
+          <li>Ứng dụng các công nghệ Microsoft mới nhất trong phát triển phần mềm quản lý y tế</li>
+          <li>Tham gia toàn bộ vòng đời phát triển phần mềm trong môi trường healthcare</li>
         </ul>
         <div class="exp-tech">
           <span class="tech-tag">C#</span>
@@ -488,16 +610,16 @@
       <div class="exp-item">
         <div class="exp-header">
           <div class="exp-title">Fresher .NET Developer</div>
-          <div class="exp-date">Jun 2024 — Dec 2025</div>
+          <div class="exp-date">06/2024 — 12/2025</div>
         </div>
-        <div class="exp-company">QAS Joint Stock Company · Ho Chi Minh City</div>
+        <div class="exp-company">Công ty Cổ phần QAS · TP. Hồ Chí Minh</div>
         <ul class="exp-desc">
-          <li>Built fullstack healthcare management software using WinForm and Blazor</li>
-          <li>Designed and optimized SQL queries and stored procedures for a vaccination
-              chain system with <strong>200+ branches</strong></li>
-          <li>Handled and managed <strong>millions of customer records</strong>,
-              ensuring system performance and data integrity</li>
-          <li>Involved in the full development cycle from requirements analysis to deployment</li>
+          <li>Phát triển fullstack phần mềm quản lý y tế sử dụng WinForm và Blazor</li>
+          <li>Thiết kế và tối ưu hóa SQL, stored procedure cho hệ thống quản lý khách hàng
+              chuỗi tiêm chủng với <strong>200+ chi nhánh</strong></li>
+          <li>Xử lý và quản lý <strong>hàng triệu dòng dữ liệu</strong> khách hàng,
+              đảm bảo hiệu năng và tính toàn vẹn dữ liệu</li>
+          <li>Tham gia phát triển tính năng từ phân tích yêu cầu đến triển khai sản phẩm</li>
         </ul>
         <div class="exp-tech">
           <span class="tech-tag">C#</span>
@@ -511,13 +633,13 @@
       <div class="exp-item">
         <div class="exp-header">
           <div class="exp-title">Software Engineering Intern</div>
-          <div class="exp-date">Sep 2022 — Dec 2022</div>
+          <div class="exp-date">09/2022 — 12/2022</div>
         </div>
-        <div class="exp-company">FPT Software HCM · Ho Chi Minh City</div>
+        <div class="exp-company">FPT Software HCM · TP. Hồ Chí Minh</div>
         <ul class="exp-desc">
-          <li>Supported project tasks within a professional software development team</li>
-          <li>Built an internal C# tool to help configure project settings,
-              improving the team's workflow efficiency</li>
+          <li>Tham gia thực hiện các tác vụ trong dự án phần mềm thực tế</li>
+          <li>Xây dựng tool nội bộ bằng C# hỗ trợ cấu hình setting cho dự án,
+              giúp tối ưu hóa quy trình làm việc của team</li>
         </ul>
         <div class="exp-tech">
           <span class="tech-tag">C#</span>
@@ -527,27 +649,27 @@
 
     </div>
 
-    <!-- EDUCATION -->
+    <!-- HỌC VẤN -->
     <div class="section">
-      <div class="section-title">Education</div>
+      <div class="section-title">Học vấn</div>
       <div class="edu-item">
-        <div class="edu-school">FPT University — Ho Chi Minh City</div>
-        <div class="edu-major">Bachelor of Engineering in Software Engineering</div>
+        <div class="edu-school">Đại học FPT — TP. Hồ Chí Minh</div>
+        <div class="edu-major">Kỹ sư Công nghệ Phần mềm (Software Engineering)</div>
         <div class="edu-detail">2019 – 2023 &nbsp;·&nbsp; GPA: 7.2 / 10</div>
       </div>
     </div>
 
-    <!-- PROJECTS -->
+    <!-- DỰ ÁN -->
     <div class="section">
-      <div class="section-title">Projects</div>
+      <div class="section-title">Dự án nổi bật</div>
 
       <div class="proj-item">
         <div class="proj-title">CoMS — Capstone Project &nbsp;
           <a class="proj-link" href="https://github.com/thanhht3001">↗ GitHub</a>
         </div>
         <div class="proj-desc">
-          A team content management system — Final year project at FPT University HCM.
-          Built following Agile methodology using JavaScript fullstack.
+          Hệ thống quản lý nội dung nhóm — Đồ án tốt nghiệp tại FPT University HCM.
+          Phát triển theo mô hình Agile, ứng dụng JavaScript fullstack.
         </div>
         <div class="exp-tech" style="margin-top:4px">
           <span class="tech-tag">JavaScript</span>
@@ -559,8 +681,8 @@
       <div class="proj-item">
         <div class="proj-title">StudyWithWinform</div>
         <div class="proj-desc">
-          A desktop learning application built with C# WinForm,
-          focusing on UI/UX design and data handling.
+          Ứng dụng học tập xây dựng trên nền tảng WinForm C#,
+          thực hành UI/UX desktop và xử lý dữ liệu.
         </div>
         <div class="exp-tech" style="margin-top:4px">
           <span class="tech-tag">C#</span>
