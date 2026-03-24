@@ -1,0 +1,2 @@
+async function e(){try{let e=await fetch(`/blog-index.json`);return e.ok?await e.json():[]}catch{return[]}}async function t(e,t){try{let n=await fetch(`/blog/${e}/${t}.md`);if(!n.ok)return null;let r=await n.text(),i=r.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);if(!i)return{content:r,meta:{}};let a=i[1],o=i[2],s={};return a.split(`
+`).forEach(e=>{let[t,...n]=e.split(`:`);if(t&&n.length){let e=n.join(`:`).trim().replace(/^["']|["']$/g,``);s[t.trim()]=e}}),{content:o,meta:s}}catch{return null}}export{t as n,e as t};

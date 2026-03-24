@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-CcNTehNg.js";var t=e();function n({name:e}){return(0,t.jsx)(`span`,{className:`tech-tag`,children:e})}export{n as t};
