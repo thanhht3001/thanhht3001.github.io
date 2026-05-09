@@ -19,6 +19,7 @@ export default function Navbar() {
     { path: '/blog', label: t('nav.blog') },
     { path: '/timeline', label: t('nav.timeline') },
     { path: '/skills', label: t('nav.skills') },
+    { path: '/game', label: t('nav.game') },
     { path: '/contact', label: t('nav.contact') },
     { path: '/cv', label: t('nav.cv') },
   ]

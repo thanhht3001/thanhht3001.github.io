@@ -28,6 +28,7 @@ for (const lang of ['vi', 'en']) {
       date: data.date || '',
       excerpt: data.excerpt || '',
       tags: data.tags || [],
+      category: data.category || 'work',
       readTime
     })
   }

@@ -9,6 +9,8 @@ const Blog = lazy(() => import('./pages/Blog'))
 const BlogPost = lazy(() => import('./pages/BlogPost'))
 const Timeline = lazy(() => import('./pages/Timeline'))
 const Skills = lazy(() => import('./pages/Skills'))
+const Game = lazy(() => import('./pages/Game'))
+const GameXO = lazy(() => import('./pages/GameXO'))
 const Contact = lazy(() => import('./pages/Contact'))
 const CV = lazy(() => import('./pages/CV'))
 const NotFound = lazy(() => import('./pages/NotFound'))
@@ -34,6 +36,8 @@ export default function App() {
             <Route path="blog/:slug" element={<BlogPost />} />
             <Route path="timeline" element={<Timeline />} />
             <Route path="skills" element={<Skills />} />
+            <Route path="game" element={<Game />} />
+            <Route path="game/xo" element={<GameXO />} />
             <Route path="contact" element={<Contact />} />
             <Route path="cv" element={<CV />} />
             <Route path="*" element={<NotFound />} />

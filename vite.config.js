@@ -9,9 +9,12 @@ export default defineConfig({
       targets: [
         {
           src: 'content/blog/**/*.md',
-          dest: 'blog'
+          dest: 'blog',
+          globOptions: { dot: false }
         }
-      ]
+      ],
+      silent: true,
+      structured: true
     })
   ],
   base: '/'

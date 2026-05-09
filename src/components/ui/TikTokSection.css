@@ -1,0 +1,27 @@
+.tiktok-section {
+  margin-bottom: 2rem;
+}
+
+.tiktok-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.tiktok-icon {
+  color: #fe2c55;
+}
+
+.tiktok-embed-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.tiktok-embed-wrap .tiktok-embed {
+  margin: 0 !important;
+}

@@ -45,13 +45,8 @@
 
 .cv-iframe {
   width: 100%;
-  height: 1150px;
+  min-height: 600px;
   border: none;
   display: block;
-}
-
-@media (max-width: 768px) {
-  .cv-iframe {
-    height: 800px;
-  }
+  overflow: hidden;
 }

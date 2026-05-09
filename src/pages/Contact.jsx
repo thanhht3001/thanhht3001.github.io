@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next'
 import { Send, Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react'
 import { social } from '../data/social'
 import ScrollReveal from '../components/ui/ScrollReveal'
-import GlowCard from '../components/ui/GlowCard'
 import './Contact.css'
 
 export default function Contact() {
@@ -16,7 +15,7 @@ export default function Contact() {
     setStatus('sending')
     const form = e.target
     try {
-      const res = await fetch('https://formspree.io/f/xpznqkaq', {
+      const res = await fetch('https://formsubmit.co/ajax/74211834d37acc6bd94215c959145ee8', {
         method: 'POST',
         body: new FormData(form),
         headers: { Accept: 'application/json' }
@@ -40,7 +39,7 @@ export default function Contact() {
       </ScrollReveal>
 
       <div className="contact-grid">
-        <GlowCard delay={100}>
+        <ScrollReveal delay={100}>
           <form className="contact-form" onSubmit={handleSubmit}>
             <p className="contact-intro">{t('contact.intro')}</p>
 
@@ -65,9 +64,9 @@ export default function Contact() {
             {status === 'success' && <p className="form-status success">{t('contact.success')}</p>}
             {status === 'error' && <p className="form-status error">{t('contact.error')}</p>}
           </form>
-        </GlowCard>
+        </ScrollReveal>
 
-        <GlowCard delay={250}>
+        <ScrollReveal delay={250}>
           <div className="contact-info">
             <h3>{t('contact.or_reach')}</h3>
             <div className="contact-info-list">
@@ -88,7 +87,7 @@ export default function Contact() {
               </a>
             </div>
           </div>
-        </GlowCard>
+        </ScrollReveal>
       </div>
     </div>
   )

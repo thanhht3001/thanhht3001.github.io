@@ -1,0 +1,120 @@
+.game-menu {
+  text-align: center;
+}
+
+.game-menu-terminal {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--terminal-green);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.terminal-prompt {
+  opacity: 0.9;
+}
+
+.game-menu-rule {
+  font-family: var(--font-mono);
+  font-size: 0.825rem;
+  color: var(--terminal-yellow);
+  margin-bottom: 1.5rem;
+  opacity: 0.85;
+  line-height: 1.6;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.game-menu-heading {
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.game-menu-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.game-target-card {
+  cursor: pointer;
+}
+
+.game-target-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.5rem 1rem;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  width: 100%;
+  font-family: var(--font-body);
+  transition: transform 0.2s;
+}
+
+.game-target-btn:hover {
+  transform: translateY(-2px);
+}
+
+.game-target-btn h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--font-mono);
+}
+
+.game-target-btn p {
+  font-size: 0.825rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.game-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  letter-spacing: 0.05em;
+}
+
+.badge-hard {
+  background: rgba(248, 81, 73, 0.15);
+  color: var(--terminal-red);
+  border: 1px solid rgba(248, 81, 73, 0.3);
+}
+
+.badge-easy {
+  background: rgba(63, 185, 80, 0.15);
+  color: var(--terminal-green);
+  border: 1px solid rgba(63, 185, 80, 0.3);
+}
+
+.game-target-icon {
+  stroke-width: 1.5;
+}
+
+.icon-win {
+  color: var(--terminal-yellow);
+}
+
+.icon-lose {
+  color: var(--terminal-green);
+}
+
+@media (max-width: 600px) {
+  .game-menu-cards {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+  }
+}

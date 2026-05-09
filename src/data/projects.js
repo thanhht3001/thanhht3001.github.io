@@ -1,45 +1,5 @@
 export const projects = [
   {
-    id: 'coms',
-    title: {
-      vi: 'CoMS — Hệ thống Quản lý Nội dung Nhóm',
-      en: 'CoMS — Team Content Management System'
-    },
-    description: {
-      vi: 'Đồ án tốt nghiệp tại FPT University. Hệ thống quản lý nội dung nhóm phát triển theo mô hình Agile, sử dụng JavaScript fullstack.',
-      en: 'Capstone project at FPT University. A team content management system built following Agile methodology using JavaScript fullstack.'
-    },
-    tech: ['JavaScript', 'ReactJS', 'Agile/Scrum'],
-    github: 'https://github.com/thanhht3001',
-    featured: true
-  },
-  {
-    id: 'study-winform',
-    title: {
-      vi: 'StudyWithWinform',
-      en: 'StudyWithWinform'
-    },
-    description: {
-      vi: 'Ứng dụng học tập xây dựng trên nền tảng WinForm C#, thực hành UI/UX desktop và xử lý dữ liệu.',
-      en: 'A desktop learning application built with C# WinForm, focusing on UI/UX design and data handling.'
-    },
-    tech: ['C#', 'WinForm'],
-    featured: true
-  },
-  {
-    id: 'healthcare-blazor',
-    title: {
-      vi: 'Phần mềm Quản lý Y tế',
-      en: 'Healthcare Management Software'
-    },
-    description: {
-      vi: 'Hệ thống quản lý y tế cho chuỗi tiêm chủng với hơn 200 chi nhánh. Xử lý hàng triệu dòng dữ liệu khách hàng.',
-      en: 'Healthcare management system for a vaccination chain with 200+ branches. Handled millions of customer records.'
-    },
-    tech: ['C#', 'ASP.NET', 'Blazor', 'WinForm', 'SQL Server'],
-    featured: true
-  },
-  {
     id: 'xmleditor-bhyt',
     title: {
       vi: 'XML Editor BHYT — Công cụ chỉnh sửa XML Bảo hiểm Y tế',
@@ -51,6 +11,35 @@ export const projects = [
     },
     tech: ['Blazor Web', '.NET', 'C#', 'Bootstrap 5'],
     demo: 'https://xmleditor.thanhht.org',
+    featured: true
+  },
+  {
+    id: 'pharmacy-retail',
+    title: {
+      vi: 'Pharmacy Retail — Hệ thống Quản lý Nhà thuốc',
+      en: 'Pharmacy Retail — Pharmacy Management System'
+    },
+    description: {
+      vi: 'Hệ thống quản lý nhà thuốc bán lẻ Đông Tây Y với kiến trúc Clean Architecture. Tích hợp đơn thuốc quốc gia, POS đa tab, quản lý kho, báo cáo phân tích và hỗ trợ multi-tenant SaaS.',
+      en: 'Retail pharmacy management system for Western & Traditional medicine with Clean Architecture. Integrates national e-prescription, multi-tab POS, inventory management, analytics, and multi-tenant SaaS support.'
+    },
+    tech: ['Blazor Server', 'ASP.NET Core', 'SQL Server', 'Redis', 'WPF', 'Docker'],
+    github: 'https://github.com/thanhht3001/pharmacy-web',
+    demo: 'https://pharmacy.thanhht.org',
+    featured: true
+  },
+  {
+    id: 'coms',
+    title: {
+      vi: 'CoMS — Hệ thống Quản lý Nội dung Nhóm',
+      en: 'CoMS — Team Content Management System'
+    },
+    description: {
+      vi: 'Đồ án tốt nghiệp tại FPT University. Hệ thống quản lý nội dung nhóm phát triển theo mô hình Agile, sử dụng JavaScript fullstack.',
+      en: 'Capstone project at FPT University. A team content management system built following Agile methodology using JavaScript fullstack.'
+    },
+    tech: ['JavaScript', 'ReactJS', 'Agile/Scrum'],
+    github: 'https://github.com/thanhht3001',
     featured: true
   },
   {

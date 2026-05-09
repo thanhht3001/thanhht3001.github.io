@@ -20,7 +20,7 @@
 }
 
 .not-found-code {
-  font-size: 5rem;
+  font-size: clamp(2.5rem, 10vw, 5rem);
   font-weight: 800;
   font-family: var(--font-mono);
   color: var(--terminal-red);

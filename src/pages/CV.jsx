@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef, useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Download, FileText } from 'lucide-react'
 import './CV.css'
@@ -13,6 +13,16 @@ export default function CV() {
   }
 
   const current = cvMap[viewLang]
+
+  const iframeRef = useRef(null)
+  const handleLoad = useCallback(() => {
+    try {
+      const iframe = iframeRef.current
+      if (iframe?.contentDocument) {
+        iframe.style.height = iframe.contentDocument.documentElement.scrollHeight + 'px'
+      }
+    } catch (e) { /* cross-origin fallback: keep CSS height */ }
+  }, [])
 
   return (
     <div className="page container">
@@ -42,9 +52,11 @@ export default function CV() {
       <div className="cv-iframe-wrap">
         <iframe
           key={viewLang}
+          ref={iframeRef}
           src={current.html}
           title="CV"
           className="cv-iframe"
+          onLoad={handleLoad}
         />
       </div>
     </div>

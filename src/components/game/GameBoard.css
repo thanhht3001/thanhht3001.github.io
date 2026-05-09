@@ -1,0 +1,175 @@
+.game-board-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.game-board-header {
+  text-align: center;
+}
+
+.game-target-info {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.game-target-info strong {
+  color: var(--text-primary);
+}
+
+.game-status {
+  min-height: 1.5rem;
+  text-align: center;
+}
+
+.status-text {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--accent);
+  transition: color 0.2s;
+}
+
+.status-text.ai-turn {
+  color: var(--terminal-yellow);
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.game-rule-hint {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  width: clamp(200px, 50vw, 300px);
+  aspect-ratio: 1;
+  background: var(--border-color);
+  border-radius: 12px;
+  padding: 6px;
+}
+
+.game-cell {
+  background: var(--bg-secondary);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1.5rem, 6vw, 2.5rem);
+  font-weight: 700;
+  font-family: var(--font-mono);
+  transition: background 0.15s, transform 0.15s, box-shadow 0.3s, opacity 0.3s;
+  position: relative;
+}
+
+.game-cell:disabled {
+  cursor: default;
+}
+
+.cell-hoverable:hover {
+  background: var(--bg-tertiary);
+  transform: scale(1.04);
+}
+
+.cell-mark {
+  display: inline-block;
+  animation: markAppear 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes markAppear {
+  from {
+    transform: scale(0) rotate(-15deg);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.mark-x {
+  color: var(--accent);
+}
+
+.mark-o {
+  color: var(--terminal-red);
+}
+
+/* Fading indicator for oldest piece (about to vanish) */
+.cell-fading {
+  animation: cellFade 1.5s ease-in-out infinite;
+  position: relative;
+}
+
+.cell-fading::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  border: 2px dashed var(--terminal-yellow);
+  border-radius: 6px;
+  opacity: 0.5;
+  animation: cellFade 1.5s ease-in-out infinite;
+}
+
+@keyframes cellFade {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+.cell-win {
+  box-shadow: 0 0 16px rgba(63, 185, 80, 0.5), inset 0 0 8px rgba(63, 185, 80, 0.15);
+  animation: winGlow 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes winGlow {
+  from {
+    box-shadow: 0 0 8px rgba(63, 185, 80, 0.3), inset 0 0 4px rgba(63, 185, 80, 0.1);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(63, 185, 80, 0.6), inset 0 0 10px rgba(63, 185, 80, 0.2);
+  }
+}
+
+.game-board-legend {
+  display: flex;
+  gap: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.legend-player .mark-x,
+.legend-ai .mark-o {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.legend-fading {
+  color: var(--terminal-yellow);
+  opacity: 0.8;
+}
+
+.game-piece-count {
+  display: flex;
+  gap: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
